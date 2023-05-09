@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Cadastro da liga dos astronautas</h3>
+<form>
+    <!--COLOCAR DIVS PARA SEPARAR DIFERENTES LINHAS E COMPLEMENTAR COM <br> SE PRECISAR-->
+    Nome: <input type="text" name="nome" id="nome" placeholder="Coloque seu nome"><br><br>
+    E-mail: <input type="email" name="email" id="email" placeholder="Insira seu e-mail">
+    Password: <input type="password" name="senha" id="senha" placeholder="Digite sua senha"><br><br>
+    Data de nascimento: <input type="date" name="data" id="data">
+    Foto: <input type="file" name="arquivo"><br><br>
+    <label for="nacionalidades">Nacionalidades</label>
+    <input list="nacionalidades" name="nacionalidade" id="nacionalidade">
+    <datalist id="nacionalidades">
+        <option value="Russo"></option>
+        <option value="Americano"></option>
+        <option value="Brasileiro"></option>
+    </datalist>
+    <!--alternativa para o datalist: selection
+            <label for="nationality">Nacionalidade:</label>
+            <select name="nationality" id="nationality">
+              <option value="russian">Russa</option>
+              <option value="american">Americana</option>
+              <option value="brasilian">Brasileira</option>
+            </select> -
+    -->
+    Gênero: <input type="radio" value="feminino" name="genero" id="genero">M
+    <input type="radio" value="masculino" name="genero">F <br><br>
+    Suas principais qualidades:<br>
+    Inteligência<input type="checkbox" name="qualidades" value="inteligencia">|
+    Resiliência<input type="checkbox" name="qualidades" value="resiliencia">|
+    Preparo Físico<input type="checkbox" name="qualidades" value="preparoFisico">|
+    Educação<input type="checkbox" name="qualidades" value="educacao"><br><br>
+    <div>
+    <textarea name="comentario" id="comentario" cols="30" rows="10"
+              placeholder="Por que você gostaria de ser astronauta?"></textarea>
+    </div>
+    <input type="submit" name="enviar">
+</form>
+</body>
+</html>
